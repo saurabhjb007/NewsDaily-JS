@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Science News</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navcontainer">
+          <img src="logo.png" alt="" />
+          <ul>
+            <a href="index.html"
+              ><li><i class="fas fa-home"></i> <span> General</span></li>
+            </a>
+            <a href="entertainment.html"
+              ><li>
+                <i class="fas fa-headphones"></i> <span> Entertainment</span>
+              </li>
+            </a>
+            <a href="health.html"
+              ><li><i class="fas fa-heartbeat"></i> <span> Health</span></li>
+            </a>
+            <a href="science.html" id="science"
+              ><li><i class="fas fa-rocket"></i> <span> Science</span></li>
+            </a>
+            <a href="sports.html"
+              ><li><i class="fas fa-running"></i> <span> Sports</span></li>
+            </a>
+            <a href="technology.html"
+              ><li><i class="fas fa-robot"></i> <span> Technology</span></li></a
+            >
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="newscontainer">
+      </section>
+      <section id="loading">
+        <div class="loadingio-spinner-spinner-nq4q5u6dq7r">
+          <div class="ldio-x2uulkbinbj">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/c04f4b633a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="science.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+      });
+    </script>
+    <script>
+      let x = window.location.pathname;
+      if (x == "/science.html") {
+        document.getElementById("science").style.backgroundColor =
+          "rgb(145 145 205)";
+        document.getElementById("science").style.color = "white";
+        document.getElementById("science").style.padding = "22px";
+      }
+    </script>
+  </body>
+</html>
